@@ -1,98 +1,83 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from "react";
+import { motion } from "framer-motion";
 import {
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
   FaReact,
-  FaServer,
-  FaDatabase,
-  FaMobileAlt,
-  FaCloud,
-  FaTools
-} from 'react-icons/fa'
+  FaJs,
+  FaNodeJs,
+  FaGitAlt,
+  FaFigma,
+} from "react-icons/fa";
+import { SiTailwindcss, SiMongodb, SiFirebase, SiExpress } from "react-icons/si";
+import { TbBrandCpp, TbBrandPython } from "react-icons/tb";
+import { HiOutlineDatabase } from "react-icons/hi";
 
 const skills = [
-  {
-    title: 'Frontend Development',
-    icon: FaReact,
-    description: 'Building responsive and interactive user interfaces with modern frameworks.',
-    tags: ['React', 'Vue.js', 'Angular', 'TypeScript']
-  },
-  {
-    title: 'Backend Development',
-    icon: FaServer,
-    description: 'Creating robust server-side applications and RESTful APIs.',
-    tags: ['Node.js', 'Express', 'Django', 'Laravel']
-  },
-  {
-    title: 'Database Management',
-    icon: FaDatabase,
-    description: 'Designing and optimizing databases for performance and scalability.',
-    tags: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase']
-  },
-  {
-    title: 'Mobile Development',
-    icon: FaMobileAlt,
-    description: 'Building cross-platform mobile applications with modern tools.',
-    tags: ['React Native', 'Flutter', 'Ionic', 'Swift']
-  },
-  {
-    title: 'Cloud & DevOps',
-    icon: FaCloud,
-    description: 'Deploying and managing applications in cloud environments.',
-    tags: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
-  },
-  {
-    title: 'Tools & Technologies',
-    icon: FaTools,
-    description: 'Essential tools and technologies I use in my development workflow.',
-    tags: ['Git & GitHub', 'Webpack', 'Figma', 'Jest']
-  }
-]
+ 
+  { name: "HTML5", icon: FaHtml5, color: "text-orange-500" },
+  { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" },
 
-const Skills = () => {
+  { name: "Bootstrap", icon: FaBootstrap, color: "text-purple-400" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-sky-400" },
+  { name: "JavaScript", icon: FaJs, color: "text-yellow-400" },
+  { name: "React", icon: FaReact, color: "text-cyan-400" },
+  { name: "Node.js", icon: FaNodeJs, color: "text-green-400" },
+  { name: "Express", icon: SiExpress, color: "text-gray-300" },
+  { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
+  { name: "MySQL", icon: HiOutlineDatabase, color: "text-blue-300" },
+  { name: "Firebase", icon: SiFirebase, color: "text-orange-400" },
+  { name: "Git & GitHub", icon: FaGitAlt, color: "text-red-400" },
+  { name: "Figma", icon: FaFigma, color: "text-pink-400" },
+  { name: "C++ OpenGL", icon: TbBrandCpp, color: "text-blue-400" },
+  // { name: "Python (Basic)", icon: TbBrandPython, color: "text-yellow-300" },
+];
+
+const Skill = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: 'easeOut' }}
-      viewport={{ once: false, amount: 0.2 }}
+    <motion.section
       id="skills"
-      className="py-20 bg-dark-100"
+      className="py-20 bg-dark-200"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
     >
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-4">
-          My <span className="text-purple">Skills</span>
-        </h2>
+      <div className="max-w-6xl mx-auto px-6">
+        <h3 className="text-3xl md:text-4xl font-bold text-center mb-4">
+          My <span className="text-purpl">Skills</span>
+        </h3>
 
-        <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
-          Technologies I work with to bring ideas to life
+        <p className="text-gray-400 text-center max-w-xl mx-auto mb-14">
+          Technologies I use to build modern, scalable and interactive applications
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="bg-dark-300 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 cursor-pointer"
-            >
-              <div className="text-purple text-4xl mb-4">
-                <skill.icon />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">
-                {skill.title}
-              </h3>
-              <p className="text-gray-400 mb-4">
-                {skill.description}
-              </p>
-              <div className='flex flex-wrap gap-2'>
-                {skill.tags.map((tech)=>(
-                    <span key={tech} className='px-3 py-1 bg-dark-400 rounded-full text-sm'>{tech}</span>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+          {skills.map((skill, index) => {
+            const Icon = skill.icon;
+            return (
+              <motion.div
+                key={skill.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                whileHover={{ y: -8, scale: 1.05 }}
+                className="bg-gray-800 rounded-2xl p-6 flex flex-col items-center gap-4 shadow-lg hover:shadow-teal-500/20 transition"
+              >
+                <div className={`text-4xl ${skill.color}`}>
+                  <Icon />
+                </div>
+                <span className="text-sm font-medium text-gray-200">
+                  {skill.name}
+                </span>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
-    </motion.div>
-  )
-}
+    </motion.section>
+  );
+};
 
-export default Skills
+export default Skill;
