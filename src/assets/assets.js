@@ -7,6 +7,8 @@ import projectImg3 from '../assets/project3.avif';
 import projectImg4 from '../assets/project4.avif';
 import projectImg5 from '../assets/project5.avif';
 import projectImg6 from '../assets/project6.avif';
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiFirebase } from "react-icons/si";
 
 
 export const assets = {
@@ -80,11 +82,11 @@ export const skills = [
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with shopping cart, user authentication, and payment processing.",
-    image: projectImg1,
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
+    title: "Chatting Application",
+    description: "A realtime chat application using React, Firebase Authentication, Realtime Database and Tailwind CSS.",
+    image: chat,
+    tech: ["React", "Node.js", "Tailwind", "Firbase"],
+    icons: [FaReact, FaNodeJs, RiTailwindCssFill , SiFirebase],
     demo: "#",
     code: "#",
   },
