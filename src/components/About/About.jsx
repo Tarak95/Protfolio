@@ -46,7 +46,7 @@ const About = () => {
         </p>
 
         <div className="flex flex-col md:flex-row items-center gap-12">
-          {/* Image */}
+         
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const About = () => {
             />
           </motion.div>
 
-          {/* Content */}
+          
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
