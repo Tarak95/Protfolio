@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import profile2 from '../../assets/profile2.png'
+import Profile1 from '../../assets/profile1.png'
 import { FaLightbulb, FaPaintBrush, FaCode } from 'react-icons/fa'
 
 const aboutInfo = [
@@ -56,7 +56,7 @@ const About = () => {
           >
             <img
               className="w-full h-full object-cover rounded-2xl"
-              src={profile2}
+              src={Profile1}
               alt="Profile"
             />
           </motion.div>

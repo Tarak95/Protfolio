@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profile from '../../assets/profile.png';
+import profile1 from '../../assets/profile1.png';
 
 const Hero = () => {
     return (
@@ -60,7 +60,7 @@ const Hero = () => {
                                 repeatType: "loop",
                                 ease: "easeInOut"
                             }}
-                            src={profile}
+                            src={profile1}
                             alt="profile"
                             className="relative w-full h-full rounded-full object-cover z-10"
                         />
