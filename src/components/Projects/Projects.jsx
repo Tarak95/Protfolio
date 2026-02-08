@@ -31,7 +31,7 @@ export const projects = [
   {
     title: "Nexcent-Website",
     description:
-      "A productivity webside",
+      "Nexcent is a modern, high-performance landing page designed for agencies and organizations looking to streamline their community management and digital presence. Built with cutting-edge technology, it offers a seamless user experience to turn visitors into loyal clients.",
     image: "/nexcent.png",
     tech: ["React", "Node.js", "Tailwind", "Javascript"],
     icons: [TbBrandJavascript, FaReact, RiTailwindCssFill],
@@ -49,14 +49,14 @@ export const projects = [
     code: "https://github.com/Tarak95/Game.git",
   },
   {
-    title: "Portfolio Website",
+    title: "Petroil Website",
     description:
-      "A personal portfolio to showcase projects, skills, and blogs.",
-    image: "",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      "Petroil AI: Smart Energy Solutions is a solid choice. You could also go with NextGen Petroil-T: Intelligent Fuel Management",
+    image: "/petroil.png",
+    tech: ["Next.js", "Tailwind CSS", "js","Html","Css","Node.js"],
     icons: [FaReact, FaCloud],
-    demo: "#",
-    code: "#",
+    demo: "https://protfolio-xi-ashen.vercel.app/",
+    code: "https://github.com/Tarak95/Protfolio.git",
   },
   {
     title: "Chat App",
