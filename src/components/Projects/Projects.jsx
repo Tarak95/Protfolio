@@ -55,29 +55,39 @@ export const projects = [
     image: "/petroil.png",
     tech: ["Next.js", "Tailwind CSS", "js","Html","Css","Node.js"],
     icons: [FaReact, FaCloud],
-    demo: "https://protfolio-xi-ashen.vercel.app/",
+    demo: "https://petroil-t.vercel.app/",
     code: "https://github.com/Tarak95/Protfolio.git",
   },
   {
-    title: "Chat App",
+    title: "Dream-Kitchen",
     description:
-      "A real-time chat application with group messaging.",
-    image: "",
-    tech: ["Socket.IO", "React", "Node.js"],
-    icons: [FaReact, FaNodeJs, FaDatabase],
-    demo: "#",
-    code: "#",
+      "A comprehensive restaurant management system that automates online ordering, table reservations, and dynamic menu customization to enhance operational efficiency.",
+    image: "/Dream.png",
+    tech: ["Html", "css"],
+    icons: [],
+    demo: "https://dream-kitchen-kappa.vercel.app/",
+    code: "https://github.com/Tarak95/Dream-kitchen.git",
   },
   {
-    title: "AI Image Generator",
+    title: "Burger-King",
     description:
-      "Generate images using AI prompts powered by OpenAI.",
-    image: "",
-    tech: ["React", "OpenAI API", "Cloudinary"],
+      "A high-performance Burger King web application clone built with a focus on responsive UI, seamless user experience, and interactive menu navigation.",
+    image: "/burger.png",
+    tech: ["Html", "Css", "Js"],
     icons: [FaRobot, FaReact, FaCloud],
-    demo: "#",
-    code: "#",
+    demo: "https://burger-king-hazel.vercel.app/",
+    code: "https://github.com/Tarak95/Burger-King.git",
   },
+  // {
+  //   title: "Burger-King",
+  //   description:
+  //     "A high-performance Burger King web application clone built with a focus on responsive UI, seamless user experience, and interactive menu navigation.",
+  //   image: "/burger.png",
+  //   tech: ["Html", "Css", "Js"],
+  //   icons: [FaRobot, FaReact, FaCloud],
+  //   demo: "https://burger-king-hazel.vercel.app/",
+  //   code: "https://github.com/Tarak95/Burger-King.git",
+  // },
 ];
 
 const Projects = () => {
