@@ -41,12 +41,12 @@ const Skill = () => {
       className="py-20 bg-dark-200"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: "easeOut" }} 
       viewport={{ once: true }}
     >
       <div className="max-w-6xl mx-auto px-6">
         <h3 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          My <span className="text-purpl">Skills</span>
+          My <span className="text-purple">Skills</span>
         </h3>
 
         <p className="text-gray-400 text-center max-w-xl mx-auto mb-14">
